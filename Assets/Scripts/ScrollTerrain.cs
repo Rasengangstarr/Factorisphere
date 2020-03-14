@@ -19,11 +19,12 @@ public class ScrollTerrain : MonoBehaviour
         for (int x = 0; x < 3; x++){
             for (int z = 0; z < 3; z++){
                 TerrainTiles[x,z] = Instantiate(TerrainPrefab, new Vector3(x*TerrainTileSize,0,z*TerrainTileSize), Quaternion.identity) as GameObject;
-                TerrainTiles[x,z].transform.Rotate(-90, 0, 0);
+                TerrainTiles[x,z].transform.Rotate(0, 0, 0);
                 if (TerrainTileSize == 1f)
-                    TerrainTileSize = TerrainTiles[x,z].GetComponent<Renderer>().bounds.size.z;
+                    TerrainTileSize = TerrainTiles[x,z].GetComponent<Renderer>().bounds.size.x;
             }
         }  
+        Debug.Log(TerrainTileSize);
     }
 
     // Update is called once per frame
@@ -54,10 +55,7 @@ public class ScrollTerrain : MonoBehaviour
             zDirection +=1;
             //TerrainTiles.transform.Translate(Vector3.forward * Time.deltaTime * ScrollSpeed, Space.World);
         }
-
-        zDirection += 1;
-        xDirection += 1;
-
+        
         for (int x = 0; x < 3; x++){
             for (int z = 0; z < 3; z++){
                 TerrainTiles[x,z].transform.Translate(Vector3.forward * zDirection * Time.deltaTime * ScrollSpeed, Space.World);

@@ -319,7 +319,6 @@ GameObject:
   - component: {fileID: 2001198272}
   - component: {fileID: 2001198271}
   - component: {fileID: 2001198270}
-  - component: {fileID: 2001198274}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -339,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d3140f1ea4d1f420a49db7170e97c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TerrainPrefab: {fileID: 616574692464784292, guid: b6b06d49c2eb54f9799cfef34befee6a,
+  TerrainPrefab: {fileID: 676799398188215153, guid: e3d3274666f96ec41b1668717d87d2d0,
     type: 3}
   ScrollSpeed: 5
 --- !u!81 &2001198271
@@ -401,21 +400,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001198269}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 7.24, z: 0}
+  m_LocalPosition: {x: 0, y: 6.93, z: 0}
   m_LocalScale: {x: 1.369, y: 1.369, z: 1.369}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &2001198274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001198269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a374aaed1eb1b3a64be201f4fe0eac58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
